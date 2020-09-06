@@ -1,16 +1,8 @@
-Sending build context to Docker daemon  10.24kB
+Sending build context to Docker daemon   76.8kB
 Step 1/5 : FROM ubuntu:xenial
  ---> 96da9143fb18
 Step 2/5 : RUN apt-get update && apt-get install -y --no-install-recommends     sudo unzip vim daemontools git-core awscli ssh wget curl psmisc iproute2 openssh-client redis-tools netcat-openbsd ca-certificates
  ---> Using cache
  ---> c51047441417
-Step 3/5 : ADD tfe.msk.pub.crt /usr/local/share/ca-certificates/
- ---> Using cache
- ---> f7b69e1a8b21
-Step 4/5 : RUN update-ca-certificates
- ---> Using cache
- ---> cded625ac4d7
-Step 5/5 : ADD init.sh /usr/local/bin/init_custom_worker.sh
- ---> 4fab1bcec612
-Successfully built 4fab1bcec612
-Successfully tagged ubuntu:worker
+Step 3/5 : ADD /home/mkaesz/Tresors/Security/msk.pub/tfe.msk.pub.crt /usr/local/share/ca-certificates/
+ADD failed: stat /var/lib/docker/tmp/docker-builder721234465/home/mkaesz/Tresors/Security/msk.pub/tfe.msk.pub.crt: no such file or directory
