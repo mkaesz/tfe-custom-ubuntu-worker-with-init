@@ -80,7 +80,7 @@ docker.io/mskaesz/tfe-ubuntu-worker-with-init         latest                  75
 
 Log in to the container:
 ```
-
+docker exec -it cd703c5b8ae3 /bin/bash
 ```
 
 Check for files in tmp:
