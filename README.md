@@ -66,7 +66,7 @@ without: docker.io/mskaesz/tfe-ubuntu-worker-with-init
 
 TFE will then look for the image with the tag "latest".
 
-## Execute a run and see the that it has injected the terraform CLI and the variables from the workspace.
+## Execute a run.
 Start a run.
 
 On the TFE host you will see the image got downloaded:
